@@ -10,8 +10,7 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class AddProductRequest {
-
+public class ProductUpdateRequest {
     private Long id;
     private String name;
     private String brand;

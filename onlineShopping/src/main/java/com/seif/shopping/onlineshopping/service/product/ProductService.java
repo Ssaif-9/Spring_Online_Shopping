@@ -1,8 +1,8 @@
 package com.seif.shopping.onlineshopping.service.product;
 
-import com.seif.shopping.onlineshopping.requests.AddProductRequest;
+import com.seif.shopping.onlineshopping.requests.ProductAddRequest;
 import com.seif.shopping.onlineshopping.entity.Product;
-import com.seif.shopping.onlineshopping.requests.UpdateProductRequest;
+import com.seif.shopping.onlineshopping.requests.ProductUpdateRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.List;
 @Service
 public interface ProductService {
 
-    Product addProduct(AddProductRequest product);
+    Product addProduct(ProductAddRequest product);
     Product getProductById(Long id);
-    Product updateProduct(UpdateProductRequest product, Long id);
+    Product updateProduct(ProductUpdateRequest product, Long id);
     void deleteProductById(Long id);
     List<Product> getAllProducts();
     List<Product> getProductsByCategory(String categoryName);
